@@ -2,33 +2,18 @@ import { Briefcase, MapPin, Calendar } from 'lucide-react'
 
 const experiences = [
     {
-        company: 'TechCorp Solutions',
-        role: 'Software Developer',
-        duration: 'Jan 2024 – Present',
-        location: 'Remote',
+        company: 'Inunity Pvt Ltd',
+        role: 'Software Engineer',
+        duration: 'May 2025 – Present',
+        location: 'Mangalore, Karnataka, India',
         type: 'Full-time',
         description:
-            'Deep dive into complex system architectures, performance optimizations, and full-stack engineering solutions.',
-        tech: ['React', 'Node.js', 'PostgreSQL', 'Docker', 'AWS'],
+            'Building and maintaining full-stack web applications — React and TypeScript on the frontend with MUI and Tailwind CSS, Go services on the backend, and PostgreSQL for data persistence.',
+        tech: ['React', 'TypeScript', 'JavaScript', 'TailwindCSS', 'MUI', 'Go', 'PostgreSQL'],
         achievements: [
-            'Reduced API response time by 40% through query optimization and caching strategies',
-            'Led migration of monolithic architecture to microservices, improving scalability by 3x',
-            'Implemented real-time features using WebSockets serving 10k+ concurrent users',
-        ],
-    },
-    {
-        company: 'StartupXYZ',
-        role: 'Frontend Engineer Intern',
-        duration: 'Jul 2023 – Dec 2023',
-        location: 'Bangalore, IN',
-        type: 'Internship',
-        description:
-            'Built and maintained user-facing features for a B2B SaaS platform with 5,000+ daily active users.',
-        tech: ['React', 'TypeScript', 'TailwindCSS', 'GraphQL'],
-        achievements: [
-            'Developed 15+ reusable UI components reducing development time by 30%',
-            'Improved Lighthouse performance score from 62 to 94 through code splitting',
-            'Collaborated with design team to implement pixel-perfect responsive layouts',
+            'Develop responsive UIs with React, MUI, and Tailwind CSS aligned with product requirements',
+            'Build and integrate REST APIs in Go with PostgreSQL for reliable data workflows',
+            'Ship type-safe features across the stack using TypeScript on the frontend and structured Go services',
         ],
     },
 ]
@@ -110,15 +95,15 @@ export default function WorkPage() {
                 <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-accent-primary via-progress-fill to-transparent opacity-80" />
                 <div className="pl-3">
                     <h3 className="font-sans text-sm font-semibold text-text-primary">
-                        B.E. Computer Science
+                        B.Tech in Computer Science
                     </h3>
-                    <p className="font-sans text-xs text-accent-primary mb-1">Visvesvaraya Technological University</p>
+                    <p className="font-sans text-xs text-accent-primary mb-1">Srinivas University,Mukka,Mangalore</p>
                     <span className="flex items-center gap-1 font-sans text-[10px] text-text-muted">
                         <Calendar size={9} />
-                        2020 – 2024
+                        2021 – 2025
                     </span>
                     <p className="font-sans text-xs text-text-secondary mt-2">
-                        Graduated with distinction. Core subjects: Data Structures, Algorithms, DBMS, OS, Computer Networks.
+                    Graduated with a CGPA of 9+.
                     </p>
                 </div>
             </div>

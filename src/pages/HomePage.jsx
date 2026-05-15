@@ -3,19 +3,18 @@ import { ArrowRight, Download, Terminal } from 'lucide-react'
 
 const skills = [
     { name: 'React', level: 90 },
-    { name: 'Node.js', level: 82 },
+    { name: 'TailwindCSS', level: 88 },
+    { name: 'Go', level: 75 },
+    { name: 'JavaScript', level: 88 },
     { name: 'TypeScript', level: 85 },
-    { name: 'SQL / NoSQL', level: 75 },
-    { name: 'Next.js', level: 80 },
-    { name: 'Tailwind', level: 88 },
-    { name: 'GraphQL', level: 65 },
-    { name: 'Docker', level: 60 },
+    { name: 'MUI', level: 82 },
+    { name: 'PostgreSQL', level: 80 },
 ]
 
 const stats = [
     { value: '01+', label: 'YEAR\nEXPERIENCE' },
     { value: '24/7', label: 'GIT\nACTIVITY' },
-    { value: '50+', label: 'PRS\nMERGED' },
+    { value: '200+', label: 'PRS\nMERGED' },
     { value: '100%', label: 'TEST\nCOVERAGE' },
 ]
 
@@ -54,10 +53,10 @@ export default function HomePage() {
                 {/* Bio */}
                 <p className="font-sans text-sm text-text-secondary leading-relaxed">
                     I am a{' '}
-                    <span className="text-text-primary font-semibold">Software Developer</span>{' '}
-                    with 1 year of experience transforming complex architectural requirements
-                    into scalable digital experiences. Specialized in building robust web
-                    applications with a focus on system integrity and user-centric precision.
+                    <span className="text-text-primary font-semibold">Software Engineer</span>{' '}
+                    at Inunity Pvt Ltd, building full-stack products with React, TypeScript,
+                    Tailwind CSS, MUI, Go, and PostgreSQL — focused on clean UIs and reliable
+                    backend systems.
                 </p>
 
                 {/* CTA Buttons */}

@@ -73,7 +73,7 @@ export default function Header() {
                     >
                         {menuOpen ? <X size={22} /> : <Menu size={22} />}
                     </button>
-                    <h1 className="text-lg font-bold text-text-primary truncate">My Portfolio</h1>
+                    <h1 className="text-lg font-bold text-text-primary truncate">Nikhil U Kundar</h1>
                 </div>
             </header>
 

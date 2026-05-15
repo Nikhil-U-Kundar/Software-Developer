@@ -6,44 +6,39 @@ const skillCategories = [
         skills: [
             { name: 'React', level: 90 },
             { name: 'TypeScript', level: 85 },
-            { name: 'Next.js', level: 80 },
+            { name: 'JavaScript', level: 88 },
             { name: 'TailwindCSS', level: 88 },
-            { name: 'HTML / CSS', level: 95 },
+            { name: 'MUI', level: 82 },
+            { name: 'HTML / CSS', level: 90 },
         ],
     },
     {
         category: 'Backend',
         skills: [
-            { name: 'Node.js', level: 82 },
-            { name: 'Go', level: 60 },
-            { name: 'Python', level: 70 },
-            { name: 'REST / GraphQL', level: 78 },
-            { name: 'WebSockets', level: 72 },
+            { name: 'Go', level: 75 },
+            { name: 'REST APIs', level: 80 },
+            { name: 'PostgreSQL', level: 80 },
         ],
     },
     {
         category: 'Database',
         skills: [
             { name: 'PostgreSQL', level: 80 },
-            { name: 'MongoDB', level: 75 },
-            { name: 'Redis', level: 65 },
-            { name: 'SQLite', level: 85 },
+            { name: 'SQL', level: 78 },
         ],
     },
     {
         category: 'DevOps & Tools',
         skills: [
-            { name: 'Docker', level: 65 },
             { name: 'Git / GitHub', level: 90 },
-            { name: 'CI/CD', level: 68 },
+            { name: 'Docker', level: 60 },
             { name: 'Linux / Bash', level: 72 },
-            { name: 'AWS (basics)', level: 55 },
         ],
     },
 ]
 
 const tools = [
-    'VS Code', 'Neovim', 'Postman', 'Figma', 'GitHub Actions', 'Vercel', 'Netlify',
+    'VS Code', 'Postman', 'pgAdmin', 'Git', 'MUI', 'Tailwind CSS',
 ]
 
 export default function SkillsPage() {
