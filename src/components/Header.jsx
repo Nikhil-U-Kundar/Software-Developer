@@ -61,16 +61,7 @@ export default function Header() {
 
     return (
         <>
-            {/* Desktop — navigation only; all sections live on the main scroll page */}
-            <aside className="hidden lg:flex flex-col fixed top-0 left-0 h-full w-44 bg-bg-secondary border-r border-bg-border z-40 p-5">
-                <h1 className="text-lg font-bold text-text-primary mb-6">My Portfolio</h1>
-                <p className="font-sans text-[10px] text-text-muted tracking-[0.2em] uppercase mb-3">
-                    Navigate
-                </p>
-                <NavLinks onNavigate={handleNavClick} />
-            </aside>
-
-            {/* Mobile header */}
+            {/* Mobile header + drawer — laptop uses scroll only, no sidebar */}
             <header className="lg:hidden sticky top-0 z-50 bg-bg-primary border-b border-bg-border">
                 <div className="flex items-center h-14 px-4 gap-3">
                     <button

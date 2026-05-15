@@ -16,14 +16,14 @@ const sections = [
 export default function App() {
   return (
     <div className="min-h-dvh bg-bg-primary">
-      <div className="max-w-md sm:max-w-lg lg:max-w-4xl mx-auto w-full lg:ml-44">
+      <div className="max-w-md sm:max-w-lg lg:max-w-4xl mx-auto w-full">
         <Header />
         <main>
           {sections.map(({ id, Component }, index) => (
             <section
               key={id}
               id={id}
-              className={`scroll-mt-14 lg:scroll-mt-6 ${index > 0 ? 'border-t border-bg-border' : ''}`}
+              className={`scroll-mt-14 lg:scroll-mt-0 ${index > 0 ? 'border-t border-bg-border' : ''}`}
             >
               <Component />
             </section>
