@@ -69,13 +69,13 @@ export default function ProjectsPage() {
                         {/* Project header */}
                         <div className="flex items-start justify-between mb-1">
                             <div>
-                                <h3 className="font-mono text-xs font-semibold text-text-primary leading-snug">
+                                <h3 className="font-sans text-xs font-semibold text-text-primary leading-snug">
                                     {project.title}
                                 </h3>
-                                <p className="font-mono text-[10px] text-text-muted mt-0.5">{project.subtitle}</p>
+                                <p className="font-sans text-[10px] text-text-muted mt-0.5">{project.subtitle}</p>
                             </div>
                             <div className="flex items-center gap-1 flex-shrink-0 ml-2">
-                                <span className="font-mono text-[9px] border border-accent-primary text-accent-primary px-1.5 py-0.5 rounded tracking-wider">
+                                <span className="font-sans text-[9px] border border-accent-primary text-accent-primary px-1.5 py-0.5 rounded tracking-wider">
                                     {project.tag}
                                 </span>
                             </div>
@@ -83,14 +83,14 @@ export default function ProjectsPage() {
 
                         {/* Role badge */}
                         <div className="mb-3">
-                            <span className="font-mono text-[9px] text-text-muted tracking-widest border border-bg-border px-2 py-0.5 rounded">
+                            <span className="font-sans text-[9px] text-text-muted tracking-widest border border-bg-border px-2 py-0.5 rounded">
                                 ROLE: {project.role}
                             </span>
                         </div>
 
                         {/* Problem Statement */}
                         <div className="mb-3">
-                            <span className="font-mono text-[9px] tracking-widest text-text-muted block mb-1">
+                            <span className="font-sans text-[9px] tracking-widest text-text-muted block mb-1">
                                 PROBLEM STATEMENT
                             </span>
                             <p className="font-sans text-xs text-text-secondary leading-relaxed">
@@ -100,7 +100,7 @@ export default function ProjectsPage() {
 
                         {/* Solution */}
                         <div className="mb-3">
-                            <span className="font-mono text-[9px] tracking-widest text-text-muted block mb-1">
+                            <span className="font-sans text-[9px] tracking-widest text-text-muted block mb-1">
                                 MY SOLUTION
                             </span>
                             <p className="font-sans text-xs text-text-secondary leading-relaxed">
@@ -111,7 +111,7 @@ export default function ProjectsPage() {
                         {/* Impact section */}
                         {expanded === project.id && (
                             <div className="mb-3">
-                                <span className="font-mono text-[9px] tracking-widest text-text-muted block mb-1">
+                                <span className="font-sans text-[9px] tracking-widest text-text-muted block mb-1">
                                     ROLE & IMPACT
                                 </span>
                                 <p className="font-sans text-xs text-text-secondary leading-relaxed">
@@ -131,7 +131,7 @@ export default function ProjectsPage() {
                         <div className="flex items-center justify-between">
                             <button
                                 onClick={() => setExpanded(expanded === project.id ? null : project.id)}
-                                className="font-mono text-[10px] text-accent-primary hover:text-text-primary transition-colors flex items-center gap-1 tracking-wider"
+                                className="font-sans text-[10px] text-accent-primary hover:text-text-primary transition-colors flex items-center gap-1 tracking-wider"
                             >
                                 {expanded === project.id ? '← COLLAPSE' : 'VIEW MORE →'}
                             </button>

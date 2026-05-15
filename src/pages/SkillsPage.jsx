@@ -66,15 +66,15 @@ export default function SkillsPage() {
             <div className="space-y-6">
                 {skillCategories.map((cat) => (
                     <div key={cat.category} className="bg-bg-card border border-bg-border rounded-lg p-4">
-                        <h3 className="font-mono text-[10px] tracking-[0.2em] text-text-muted uppercase mb-3">
+                        <h3 className="font-sans text-[10px] tracking-[0.2em] text-accent-primary uppercase mb-3">
                             {cat.category}
                         </h3>
                         <div className="space-y-3">
                             {cat.skills.map((skill) => (
                                 <div key={skill.name}>
                                     <div className="flex justify-between items-center mb-1">
-                                        <span className="font-mono text-xs text-text-primary">{skill.name}</span>
-                                        <span className="font-mono text-[10px] text-text-muted">{skill.level}%</span>
+                                        <span className="font-sans text-xs text-text-primary">{skill.name}</span>
+                                        <span className="font-sans text-[10px] text-progress-fill font-semibold">{skill.level}%</span>
                                     </div>
                                     <div className="skill-bar">
                                         <div
@@ -98,7 +98,7 @@ export default function SkillsPage() {
                 {tools.map((tool) => (
                     <span
                         key={tool}
-                        className="font-mono text-xs border border-bg-border text-text-secondary px-3 py-1.5 rounded hover:border-accent-primary hover:text-accent-primary transition-all duration-200"
+                        className="font-sans text-xs border border-bg-border text-text-secondary px-3 py-1.5 rounded hover:border-accent-primary hover:text-accent-primary transition-all duration-200"
                     >
                         {tool}
                     </span>
@@ -108,7 +108,7 @@ export default function SkillsPage() {
             {/* Philosophy box */}
             <div className="glow-line my-6" />
             <div className="bg-bg-card border border-bg-border rounded-lg p-4">
-                <span className="font-mono text-[10px] tracking-[0.2em] text-accent-primary block mb-2">
+                <span className="font-sans text-[10px] tracking-[0.2em] text-accent-primary block mb-2">
           // THE MINDSET
                 </span>
                 <p className="font-sans text-xs text-text-secondary leading-relaxed">
@@ -116,7 +116,7 @@ export default function SkillsPage() {
                     fundamentals first, then layering abstractions. Code should be readable,
                     testable, and maintainable — not just functional.
                 </p>
-                <p className="font-mono text-xs text-accent-primary mt-3 terminal-cursor">
+                <p className="font-sans text-xs text-accent-primary mt-3 terminal-cursor">
                     &gt; always_learning
                 </p>
             </div>

@@ -33,7 +33,7 @@ export default function ContactPage() {
 
             {/* Opening */}
             <div className="bg-bg-card border border-bg-border rounded-lg p-4 mb-6">
-                <p className="font-mono text-[10px] text-accent-primary tracking-widest mb-2">
+                <p className="font-sans text-[10px] text-accent-primary tracking-widest mb-2">
           // INITIATE CONTACT
                 </p>
                 <p className="font-sans text-xs text-text-secondary leading-relaxed">
@@ -45,7 +45,7 @@ export default function ContactPage() {
             {/* Contact Form */}
             <form onSubmit={handleSubmit} className="space-y-4 mb-8">
                 <div>
-                    <label className="font-mono text-[9px] text-text-muted tracking-widest block mb-1.5 uppercase">
+                    <label className="font-sans text-[9px] text-text-muted tracking-widest block mb-1.5 uppercase">
                         Your Name
                     </label>
                     <input
@@ -55,11 +55,11 @@ export default function ContactPage() {
                         onChange={handleChange}
                         required
                         placeholder="John Doe"
-                        className="w-full bg-bg-card border border-bg-border rounded px-3 py-2.5 font-mono text-xs text-text-primary placeholder-text-muted focus:outline-none focus:border-accent-primary transition-colors"
+                        className="w-full bg-bg-card border border-bg-border rounded px-3 py-2.5 font-sans text-xs text-text-primary placeholder-text-muted focus:outline-none focus:border-accent-primary transition-colors"
                     />
                 </div>
                 <div>
-                    <label className="font-mono text-[9px] text-text-muted tracking-widest block mb-1.5 uppercase">
+                    <label className="font-sans text-[9px] text-text-muted tracking-widest block mb-1.5 uppercase">
                         Email Address
                     </label>
                     <input
@@ -69,11 +69,11 @@ export default function ContactPage() {
                         onChange={handleChange}
                         required
                         placeholder="john@example.com"
-                        className="w-full bg-bg-card border border-bg-border rounded px-3 py-2.5 font-mono text-xs text-text-primary placeholder-text-muted focus:outline-none focus:border-accent-primary transition-colors"
+                        className="w-full bg-bg-card border border-bg-border rounded px-3 py-2.5 font-sans text-xs text-text-primary placeholder-text-muted focus:outline-none focus:border-accent-primary transition-colors"
                     />
                 </div>
                 <div>
-                    <label className="font-mono text-[9px] text-text-muted tracking-widest block mb-1.5 uppercase">
+                    <label className="font-sans text-[9px] text-text-muted tracking-widest block mb-1.5 uppercase">
                         Message
                     </label>
                     <textarea
@@ -83,13 +83,13 @@ export default function ContactPage() {
                         required
                         rows={5}
                         placeholder="Tell me about your project..."
-                        className="w-full bg-bg-card border border-bg-border rounded px-3 py-2.5 font-mono text-xs text-text-primary placeholder-text-muted focus:outline-none focus:border-accent-primary transition-colors resize-none"
+                        className="w-full bg-bg-card border border-bg-border rounded px-3 py-2.5 font-sans text-xs text-text-primary placeholder-text-muted focus:outline-none focus:border-accent-primary transition-colors resize-none"
                     />
                 </div>
                 <button
                     type="submit"
-                    className={`w-full py-2.5 font-mono text-xs tracking-[0.2em] uppercase flex items-center justify-center gap-2 border transition-all duration-200 ${sent
-                        ? 'border-green-glow text-green-glow'
+                    className={`w-full py-2.5 font-sans text-xs tracking-[0.2em] uppercase flex items-center justify-center gap-2 border transition-all duration-200 ${sent
+                        ? 'border-accent-primary text-accent-primary bg-accent-glow'
                         : 'border-accent-primary text-accent-primary hover:bg-accent-glow'
                         }`}
                 >
@@ -119,8 +119,8 @@ export default function ContactPage() {
                     >
                         <Icon size={14} className="text-text-muted group-hover:text-accent-primary transition-colors" />
                         <div>
-                            <p className="font-mono text-[10px] text-text-muted">{label}</p>
-                            <p className="font-mono text-xs text-text-primary truncate">{handle}</p>
+                            <p className="font-sans text-[10px] text-text-muted">{label}</p>
+                            <p className="font-sans text-xs text-text-primary truncate">{handle}</p>
                         </div>
                     </a>
                 ))}
@@ -129,10 +129,10 @@ export default function ContactPage() {
             {/* Footer */}
             <div className="glow-line my-6" />
             <footer>
-                <p className="font-mono text-[9px] text-text-muted tracking-[0.15em] mb-2">
+                <p className="font-sans text-[9px] text-text-muted tracking-[0.15em] mb-2">
                     © 2024 NIKHIL.DEV // ALL RIGHTS RESERVED
                 </p>
-                <p className="font-mono text-[9px] text-text-muted">
+                <p className="font-sans text-[9px] text-text-muted">
                     Built with React + Tailwind CSS
                 </p>
             </footer>

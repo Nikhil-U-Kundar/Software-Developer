@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import { ArrowRight, Download, Terminal } from 'lucide-react'
 
 const skills = [
@@ -38,14 +37,14 @@ export default function HomePage() {
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-glow opacity-75" />
                         <span className="relative inline-flex rounded-full h-2 w-2 bg-green-glow" />
                     </span>
-                    <span className="font-mono text-[10px] tracking-[0.25em] text-text-secondary uppercase">
+                    <span className="font-sans text-[10px] tracking-[0.25em] text-text-secondary uppercase">
                         Available for new opportunities
                     </span>
                 </div>
 
                 {/* Headline */}
                 <div>
-                    <h1 className="font-mono text-2xl font-bold leading-tight text-text-primary">
+                    <h1 className="font-sans text-2xl font-bold leading-tight text-text-primary">
                         Engineering{' '}
                         <span className="text-accent-primary">High-Performance</span>{' '}
                         Technical Solutions.
@@ -63,11 +62,11 @@ export default function HomePage() {
 
                 {/* CTA Buttons */}
                 <div className="flex flex-col gap-3 pt-2">
-                    <Link to="/projects">
-                        <button className="cta-btn-primary w-full text-center tracking-[0.2em] text-xs uppercase">
+                    <a href="#projects">
+                        <button type="button" className="cta-btn-primary w-full text-center tracking-[0.2em] text-xs uppercase">
                             VIEW PROJECTS
                         </button>
-                    </Link>
+                    </a>
                     <button className="cta-btn-ghost text-left flex items-center gap-2 text-xs uppercase tracking-widest">
                         <Download size={12} />
                         DOWNLOAD CV
@@ -88,8 +87,8 @@ export default function HomePage() {
                     {skills.map((skill, i) => (
                         <div key={skill.name} className="bg-bg-card border border-bg-border rounded p-3">
                             <div className="flex justify-between items-center mb-2">
-                                <span className="font-mono text-xs text-text-primary">{skill.name}</span>
-                                <span className="font-mono text-[10px] text-text-muted">{skill.level}%</span>
+                                <span className="font-sans text-xs text-text-primary">{skill.name}</span>
+                                <span className="font-sans text-[10px] text-progress-fill font-semibold">{skill.level}%</span>
                             </div>
                             <div className="skill-bar">
                                 <div
@@ -104,16 +103,16 @@ export default function HomePage() {
 
             {/* Philosophy */}
             <section className="scanline bg-bg-card border border-bg-border rounded-lg overflow-hidden">
-                <div className="relative h-32 bg-gradient-to-br from-[#0d0d20] to-[#050508] flex flex-col justify-end p-4">
+                <div className="relative h-32 bg-gradient-to-br from-[#1c1917] via-[#431407] to-[#ea580c] flex flex-col justify-end p-4">
                     {/* Code rain effect */}
-                    <div className="absolute inset-0 opacity-20 overflow-hidden font-mono text-[8px] text-accent-primary leading-3 p-2 pointer-events-none select-none">
+                    <div className="absolute inset-0 opacity-20 overflow-hidden font-sans text-[8px] text-white leading-3 p-2 pointer-events-none select-none">
                         {`const arch = new System();\narch.optimize();\narch.deploy().then(() => {\n  console.log('clean');\n});\n// zero-overhead\nasync function solve(n) {\n  const cache = new Map();\n  return dp(n, cache);\n}`}
                     </div>
                     <div className="relative z-10">
-                        <p className="font-mono text-[10px] text-accent-primary tracking-widest uppercase mb-1">
+                        <p className="font-sans text-[10px] text-white tracking-widest uppercase mb-1">
                             PHILOSOPHY
                         </p>
-                        <p className="font-mono text-sm text-text-secondary">
+                        <p className="font-sans text-sm text-neutral-300">
                             Clean Code. Efficient Systems.
                         </p>
                     </div>
@@ -126,10 +125,10 @@ export default function HomePage() {
             <section className="grid grid-cols-2 gap-x-8 gap-y-6">
                 {stats.map((stat) => (
                     <div key={stat.value} className="stat-card">
-                        <span className="font-mono text-3xl font-bold text-text-primary">
+                        <span className="font-sans text-3xl font-bold text-text-primary">
                             {stat.value}
                         </span>
-                        <span className="font-mono text-[10px] text-text-muted tracking-widest whitespace-pre-line leading-4">
+                        <span className="font-sans text-[10px] text-text-muted tracking-widest whitespace-pre-line leading-4">
                             {stat.label}
                         </span>
                     </div>
@@ -140,7 +139,7 @@ export default function HomePage() {
 
             {/* Footer */}
             <footer className="pb-4">
-                <p className="font-mono text-[9px] text-text-muted tracking-[0.15em] mb-4">
+                <p className="font-sans text-[9px] text-text-muted tracking-[0.15em] mb-4">
                     © 2024 NIKHIL.DEV // ALL RIGHTS RESERVED
                 </p>
                 <div className="flex gap-6">
@@ -148,7 +147,7 @@ export default function HomePage() {
                         <a
                             key={link}
                             href="#"
-                            className="font-mono text-[9px] text-text-muted tracking-widest hover:text-accent-primary transition-colors"
+                            className="font-sans text-[9px] text-text-muted tracking-widest hover:text-accent-primary transition-colors"
                         >
                             {link}
                         </a>

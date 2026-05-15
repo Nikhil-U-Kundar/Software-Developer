@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -13,14 +13,17 @@
 
   html {
     scroll-behavior: smooth;
+    font-family: 'Source Sans 3', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   }
 
   body {
-    font-family: 'Inter', sans-serif;
-    background-color: #1a1a2e;
-    color: #e8e8f0;
+    font-family: 'Source Sans 3', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #0a0a0a;
     margin: 0;
     padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   #root {
@@ -38,16 +41,16 @@
     width: 4px;
   }
   ::-webkit-scrollbar-track {
-    background: #080810;
+    background: #f5f5f5;
   }
   ::-webkit-scrollbar-thumb {
-    background: #1e1e3a;
+    background: #d4d4d4;
     border-radius: 2px;
   }
 
   ::selection {
-    background: rgba(124, 106, 247, 0.3);
-    color: #e8e8f0;
+    background: rgba(234, 88, 12, 0.2);
+    color: #0a0a0a;
   }
 
   @media (min-width: 768px) {
@@ -85,7 +88,7 @@
   }
 
   .tech-pill {
-    @apply text-xs font-mono px-2 py-0.5 border border-bg-border rounded text-text-secondary;
+    @apply text-xs font-sans font-medium px-2 py-0.5 border border-bg-border rounded text-text-secondary;
     transition: all 0.2s ease;
   }
 
@@ -107,16 +110,17 @@
   }
 
   .section-label {
-    @apply text-xs font-mono text-text-muted tracking-[0.2em] uppercase;
+    @apply text-xs font-sans font-semibold text-accent-primary tracking-[0.12em] uppercase;
   }
 
   .skill-bar {
-    @apply h-0.5 bg-bg-border rounded-full overflow-hidden;
+    @apply h-2 bg-bg-border rounded-full overflow-hidden;
   }
 
   .skill-bar-fill {
     @apply h-full rounded-full;
-    background: linear-gradient(90deg, #7c6af7, #a78bfa);
+    background: linear-gradient(90deg, #16a34a, #22c55e, #4ade80);
+    box-shadow: 0 0 8px rgba(34, 197, 94, 0.35);
     transition: width 1s ease-in-out;
   }
 
@@ -134,7 +138,7 @@
   }
 
   .cta-btn {
-    @apply px-5 py-2.5 font-mono text-sm font-medium tracking-wider;
+    @apply px-5 py-2.5 font-sans text-sm font-semibold tracking-wide;
     transition: all 0.2s ease;
   }
 
@@ -144,7 +148,7 @@
   }
 
   .cta-btn-primary:hover {
-    background: rgba(124, 106, 247, 0.1);
+    background: rgba(234, 88, 12, 0.08);
   }
 
   .cta-btn-ghost {
@@ -156,8 +160,9 @@
   }
 
   .glow-line {
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(124,106,247,0.5), transparent);
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #22c55e, #ea580c, transparent);
+    opacity: 0.65;
   }
 }
 
@@ -193,7 +198,7 @@
 .terminal-cursor::after {
   content: '_';
   animation: blink-cursor 1s step-end infinite;
-  color: #7c6af7;
+  color: #ea580c;
 }
 
 /* Scanline overlay */
@@ -209,8 +214,8 @@
     0deg,
     transparent,
     transparent 2px,
-    rgba(0,0,0,0.03) 2px,
-    rgba(0,0,0,0.03) 4px
+    rgba(0,0,0,0.04) 2px,
+    rgba(0,0,0,0.04) 4px
   );
   pointer-events: none;
 }
