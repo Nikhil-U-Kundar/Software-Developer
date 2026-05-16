@@ -1,10 +1,10 @@
 import { GitBranch, Link, Code2, Mail, Briefcase } from 'lucide-react'
 
 const socials = [
-    { icon: GitBranch, label: 'GitHub', handle: '@nikhil-dev', href: '#' },
-    { icon: Link, label: 'LinkedIn', handle: 'nikhil-u-kundar', href: '#' },
-    { icon: Code2, label: 'Source', handle: 'portfolio.src', href: '#' },
-    { icon: Mail, label: 'Email', handle: 'nikhil@dev.io', href: 'mailto:nikhil@dev.io' },
+    { icon: GitBranch, label: 'GitHub', handle: '@nikhil-dev', href: 'https://github.com/Nikhil-U-Kundar?tab=overview&from=2026-05-01&to=2026-05-15' },
+    { icon: Link, label: 'LinkedIn', handle: 'nikhil-u-kundar', href: 'https://www.linkedin.com/in/nikhil-u-kundar-58ab7a243' },
+    { icon: Code2, label: 'Source', handle: 'portfolio.src', href: 'https://nikhilukundar.vercel.app/' },
+    { icon: Mail, label: 'Email', handle: 'nikhil@dev.io', href: 'mailto:nikhilkulalk@gmail.com' },
 ]
 
 export default function ContactPage() {
