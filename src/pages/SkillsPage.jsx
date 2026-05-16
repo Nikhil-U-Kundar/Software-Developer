@@ -31,7 +31,6 @@ const skillCategories = [
         category: 'DevOps & Tools',
         skills: [
             { name: 'Git / GitHub', level: 90 },
-            { name: 'Docker', level: 60 },
             { name: 'Linux / Bash', level: 72 },
         ],
     },
