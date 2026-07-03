@@ -4,49 +4,49 @@ import { ExternalLink, GitBranch } from 'lucide-react'
 const projects = [
     {
         id: 1,
-        title: 'Terminal Systems // Cloud Architecture',
-        subtitle: 'Hours: Sys DB',
-        tag: 'STAGE: V2 →',
+        title: 'EduERP // Institutional Management Platform',
+        subtitle: 'Full Lifecycle: Admission → Result',
+        tag: 'IN PROD',
         problem:
-            'Legacy and broken architecture across distributed nodes suffered from high latency (250ms+) and frequent race conditions during high-concurrency event bursts, leading to occasional data drops (1-2 TPS) in hundreds of real-time trading environments.',
+            'Engineering colleges and institutions relied on fragmented, manual processes for admissions, fee management, attendance, internal marks, and result generation — causing data inconsistencies, administrative overhead, and delayed student outcomes.',
         solution:
-            'Built a distributed, event-driven architecture using a Raft-backed consensus algorithm and used it to ensure 0-downtime rollouts. Managed a new role-based multi-channel serial online processor to reduce IPC overhead by 40%.',
+            'Built a comprehensive ERP system covering the entire student lifecycle: online admissions with document workflows, fee collection & receipts, attendance tracking, internal marks entry, subject-wise grade computation, and automated result generation with hall-ticket and marksheet exports.',
         impact:
-            'Load Balanced: Offered the zero-engine available online development and delivery at 99.3% uptime in live production data without downtime.',
-        tech: ['Go', 'Kubernetes', 'Rust Engine'],
+            'Deployed across multiple engineering and degree colleges. Reduced result processing time by 70%. Eliminated manual mark entry errors. Covers 5000+ students across institutions.',
+        tech: ['React', 'Node.js', 'PostgreSQL', 'Express'],
         role: 'FULL-STACK',
         github: '#',
         live: '#',
     },
     {
         id: 2,
-        title: 'Project 2.0: Full-Stack LLM',
-        subtitle: 'Cognitive Impact: Ok',
-        tag: 'IN PROD',
+        title: 'EduERP // Design & Examination Module',
+        subtitle: 'Marks · Grades · Hall Tickets',
+        tag: 'STAGE: V2 →',
         problem:
-            "MLOps team lacked a unified interface to produce accurate real-time and non-real-time fine-tune task-based reasoning across multiple events, causing disconnections in user flow and inconsistent LLM results.",
+            'Examination departments lacked a unified tool to manage subject allocations, internal/external mark schemes, design-marks tracking for departmental projects, and automated result computation adhering to university regulations.',
         solution:
-            'Built a React dashboard with a modular state-driven interface that interfaces directly with TensorFlow modules. Implemented a streaming SSE handler to pass function-call tokens down to ensure accurate data transformation.',
+            'Designed a modular examination engine with configurable mark schemes (CIA, semester exams, design marks), grace-mark rules, arrear tracking, and one-click PDF generation for hall tickets, mark statements, and consolidated result sheets.',
         impact:
-            'Full-Stack: Lowered deploy time from 90 to 45 mins. Reduced display load from 90 to 45s for auto-gen parameter forms.',
-        tech: ['Python', 'FastAPI', 'React', 'PostgreSQL'],
+            'Exam result turnaround reduced from weeks to hours. Design-mark workflows now digital. Hall ticket generation automated for 3000+ students per cycle.',
+        tech: ['React', 'Python', 'FastAPI', 'PostgreSQL'],
         role: 'FULL-STACK',
         github: '#',
         live: '#',
     },
     {
         id: 3,
-        title: 'Project 3.0: Core Engine',
-        subtitle: 'View the site log',
-        tag: 'OPEN SOURCE',
+        title: 'Project LLM // Intelligent Domain Assistant',
+        subtitle: 'Context-Aware Reasoning Engine',
+        tag: 'IN DEV',
         problem:
-            'Core performance issues caused build time latency and parallel pipeline inefficiencies across distributed CI runners.',
+            'Institutions and teams lacked an intelligent assistant capable of accurate domain-specific reasoning — existing LLM integrations produced generic, hallucinated outputs with no grounding in institutional context or structured data.',
         solution:
-            'Designed an optimized build graph with smart caching, parallelization, and dependency resolution that cut build times significantly.',
+            'Building a fine-tuned LLM pipeline with RAG (Retrieval-Augmented Generation) over institutional knowledge bases. Implemented a streaming SSE interface, function-calling for structured data queries, and a React dashboard for real-time interaction and model configuration.',
         impact:
-            'Build time: reduced from 12min → 3.2min. Cache hit ratio: 89%. Contributors: 24+',
-        tech: ['Rust', 'Go', 'WASM'],
-        role: 'BACKEND',
+            'Query accuracy over domain data improved significantly vs. off-the-shelf GPT. Response latency under 2s for 95% of queries. Modular design supports plug-in of new knowledge bases.',
+        tech: ['Python', 'FastAPI', 'React', 'PostgreSQL', 'LangChain'],
+        role: 'FULL-STACK',
         github: '#',
         live: null,
     },

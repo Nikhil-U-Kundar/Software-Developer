@@ -138,9 +138,6 @@ export default function HomePage() {
 
             {/* Footer */}
             <footer className="pb-4">
-                <p className="font-sans text-[9px] text-text-muted tracking-[0.15em] mb-4">
-                    © 2024 NIKHIL.DEV // ALL RIGHTS RESERVED
-                </p>
                 <div className="flex gap-6">
                     {['GITHUB', 'LINKEDIN', 'SOURCE'].map((link) => (
                         <a

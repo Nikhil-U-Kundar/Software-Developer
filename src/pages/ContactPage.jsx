@@ -70,16 +70,6 @@ export default function ContactPage() {
                     </a>
                 ))}
             </div>
-
-            <div className="glow-line my-6" />
-            <footer>
-                <p className="font-sans text-[9px] text-text-muted tracking-[0.15em] mb-2">
-                    © 2024 NIKHIL.DEV // ALL RIGHTS RESERVED
-                </p>
-                <p className="font-sans text-[9px] text-text-muted">
-                    Built with React + Tailwind CSS
-                </p>
-            </footer>
         </div>
     )
 }
