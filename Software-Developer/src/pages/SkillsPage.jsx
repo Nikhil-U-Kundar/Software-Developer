@@ -1,0 +1,119 @@
+import { useEffect, useState } from 'react'
+
+const skillCategories = [
+    {
+        category: 'Frontend',
+        skills: [
+            { name: 'React', level: 90 },
+            { name: 'TypeScript', level: 85 },
+            { name: 'JavaScript', level: 88 },
+            { name: 'TailwindCSS', level: 88 },
+            { name: 'MUI', level: 82 },
+            { name: 'HTML / CSS', level: 90 },
+        ],
+    },
+    {
+        category: 'Backend',
+        skills: [
+            { name: 'Go', level: 75 },
+            { name: 'REST APIs', level: 80 },
+            { name: 'PostgreSQL', level: 80 },
+        ],
+    },
+    {
+        category: 'Database',
+        skills: [
+            { name: 'PostgreSQL', level: 80 },
+            { name: 'SQL', level: 78 },
+        ],
+    },
+    {
+        category: 'DevOps & Tools',
+        skills: [
+            { name: 'Git / GitHub', level: 90 },
+            { name: 'Linux / Bash', level: 72 },
+        ],
+    },
+]
+
+const tools = [
+    'VS Code', 'Postman', 'pgAdmin', 'Git', 'MUI', 'Tailwind CSS',
+]
+
+export default function SkillsPage() {
+    const [animated, setAnimated] = useState(false)
+
+    useEffect(() => {
+        const t = setTimeout(() => setAnimated(true), 100)
+        return () => clearTimeout(t)
+    }, [])
+
+    return (
+        <div className="px-4 pt-6 pb-6 fade-in-up">
+            {/* Header */}
+            <div className="mb-6">
+                <span className="section-label">Core Technologies</span>
+                <div className="h-px bg-bg-border mt-3" />
+            </div>
+
+            {/* Skill categories */}
+            <div className="space-y-6">
+                {skillCategories.map((cat) => (
+                    <div key={cat.category} className="bg-bg-card border border-bg-border rounded-lg p-4">
+                        <h3 className="font-sans text-[10px] tracking-[0.2em] text-accent-primary uppercase mb-3">
+                            {cat.category}
+                        </h3>
+                        <div className="space-y-3">
+                            {cat.skills.map((skill) => (
+                                <div key={skill.name}>
+                                    <div className="flex justify-between items-center mb-1">
+                                        <span className="font-sans text-xs text-text-primary">{skill.name}</span>
+                                        <span className="font-sans text-[10px] text-progress-fill font-semibold">{skill.level}%</span>
+                                    </div>
+                                    <div className="skill-bar">
+                                        <div
+                                            className="skill-bar-fill"
+                                            style={{ width: animated ? `${skill.level}%` : '0%' }}
+                                        />
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                ))}
+            </div>
+
+            {/* Tools section */}
+            <div className="glow-line my-6" />
+            <div className="mb-3">
+                <span className="section-label">Tools & Environment</span>
+            </div>
+            <div className="flex flex-wrap gap-2">
+                {tools.map((tool) => (
+                    <span
+                        key={tool}
+                        className="font-sans text-xs border border-bg-border text-text-secondary px-3 py-1.5 rounded hover:border-accent-primary hover:text-accent-primary transition-all duration-200"
+                    >
+                        {tool}
+                    </span>
+                ))}
+            </div>
+
+            {/* Philosophy box */}
+            <div className="glow-line my-6" />
+            <div className="bg-bg-card border border-bg-border rounded-lg p-4">
+                <span className="font-sans text-[10px] tracking-[0.2em] text-accent-primary block mb-2">
+          // THE MINDSET
+                </span>
+                <p className="font-sans text-xs text-text-secondary leading-relaxed">
+                    Every tool in this arsenal was chosen with intention. I believe in mastering
+                    fundamentals first, then layering abstractions. Code should be readable,
+                    testable, and maintainable — not just functional.
+                </p>
+                <p className="font-sans text-xs text-accent-primary mt-3 terminal-cursor">
+                    &gt; always_learning
+                </p>
+            </div>
+        </div>
+    )
+}
